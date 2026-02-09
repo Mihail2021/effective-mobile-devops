@@ -1,5 +1,3 @@
-version: '3.8'
-
 # Define custom network for better isolation
 networks:
   app-network:
