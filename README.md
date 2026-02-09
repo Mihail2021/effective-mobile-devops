@@ -21,9 +21,9 @@
 ### Запуск приложения
 
 1. **Клонируйте репозиторий:**
-   bash
-   git clone <repository-url>
-   cd effective-mobile-devops-test
+   ```bash
+   git clone https://github.com/Mihail2021/effective-mobile-devops.git
+   cd effective-mobile-devops
 
 2. **Создание контейнеров и запуск служб**
    docker compose up -d
