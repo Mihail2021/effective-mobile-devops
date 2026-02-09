@@ -22,14 +22,12 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
             self.wfile.write(b"Not Found")
 
     def log_message(self, format, *args):
-        # Disable default logging
         pass
 
 def run_server():
     server_address = ('', 8080)
     httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
     
-    # Get container hostname for logging
     hostname = socket.gethostname()
     print(f"Starting backend server on port 8080 (hostname: {hostname})")
     
